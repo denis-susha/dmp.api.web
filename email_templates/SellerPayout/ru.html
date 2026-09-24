@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💸 Ваш вывод средств с Filezon отправлен</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f4f4f4;">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#f4f4f4">
+        <tr>
+            <td align="center" style="padding: 20px;">
+                <!-- Main Content Table -->
+                <table width="600" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="border-radius: 8px;">
+                    <tr>
+                        <td align="center" style="padding: 30px 0;">
+                            <img src="@(((dynamic)Model).LogoUrl)" alt="Logo" style="max-width: 150px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 20px; text-align: center; font-size: 18px; color: #333333;">                            
+                            <div style="margin: 0 0 20px; font-size: 16px; color: #666666; text-align: left;">
+                                <p><strong>Здравствуйте, @(((dynamic)Model).UserName)</strong>,</p>
+                                <p>Мы обработали ваш запрос на вывод средств — деньги уже в пути! ✅</p>
+                                <p>Детали выплаты:</p>
+                                <ul>
+                                    <li>Сумма: @(((dynamic)Model).Amount)</li>
+                                    <li>Комиссия сети: @(((dynamic)Model).NetworkFee)</li>
+                                    <li>Кошелек: @(((dynamic)Model).Address)</li>
+                                    <li>ID транзакции: @(((dynamic)Model).NetworkTransaction)</li>
+                                </ul>
+                                <p>Ваши средства с Filezon были успешно переведены на ваш криптокошелёк. В зависимости от загрузки сети подтверждение может занять несколько минут.</p>
+                            </div>                            
+                            <a href="@(((dynamic)Model).ButtonLink)" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: #ffffff; text-decoration: none; border-radius: 5px; font-size: 16px;">Посмотреть выплаты</a>
+                            <div style="margin: 0 0 20px; font-size: 16px; color: #666666; text-align: left;">
+                                <br/>
+                                <p>Спасибо, что продаёте на Filezon. Мы рады поддерживать ваш успех!</p>
+                                <p>С уважением,<br/><strong>Команда Filezon</strong></p>
+                            </div>
+                        </td>
+                    </tr>                    
+                    <tr>
+                        <td style="padding: 10px 20px; text-align: center; font-size: 12px; color: #cccccc; background-color: #f9f9f9; border-top: 1px solid #e5e5e5;">
+                            © @(((dynamic)Model).Year) Filezon. Все права защищены.
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

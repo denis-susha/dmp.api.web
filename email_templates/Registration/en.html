@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 Welcome to Filezon! Your account has been successfully created</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f4f4f4;">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#f4f4f4">
+        <tr>
+            <td align="center" style="padding: 20px;">
+                <!-- Main Content Table -->
+                <table width="600" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="border-radius: 8px;">
+                    <tr>
+                        <td align="center" style="padding: 30px 0;">
+                            <img src="@(((dynamic)Model).LogoUrl)" alt="Logo" style="max-width: 150px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 20px; text-align: center; font-size: 18px; color: #333333;">
+                            <h2 style="margin: 0 0 10px; font-size: 24px; color: #333333;">🎉 Welcome to Filezon!</h2>
+                            <div style="margin: 0 0 20px; font-size: 16px; color: #666666; text-align: left;">
+                                <p><strong>Hi @(((dynamic)Model).UserName)</strong>,</p>
+                                <p>Thanks for signing up! Your account on Filezon has been successfully created.</p>
+                                <p>You're now part of a global marketplace for digital goods powered by cryptocurrency. You can:</p>
+                                <ul>
+                                    <li>Explore and purchase digital products instantly</li>
+                                    <li>List your own products and start selling</li>
+                                    <li>Manage your transactions securely with crypto</li>
+                                </ul>
+                                <p>To get started, just log in to your dashboard here:</p>
+                            </div>                            
+                            <a href="@(((dynamic)Model).ButtonLink)" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: #ffffff; text-decoration: none; border-radius: 5px; font-size: 16px;">Go to Filezon</a>
+                            <div style="margin: 0 0 20px; font-size: 16px; color: #666666; text-align: left;">
+                                <br/>
+                                <p>If you have any questions, our support team is always here to help.</p>
+                                <p>Welcome aboard,<br/><strong>The Filezon Team</strong></p>
+                            </div>
+                        </td>
+                    </tr>                    
+                    <tr>
+                        <td style="padding: 10px 20px; text-align: center; font-size: 12px; color: #cccccc; background-color: #f9f9f9; border-top: 1px solid #e5e5e5;">
+                            © @(((dynamic)Model).Year) Filezon. All rights reserved.
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

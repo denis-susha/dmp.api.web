@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <UserSecretsId>67fb952d-2337-4932-ba49-dcb5e4985ad3</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bogus" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+    <PackageReference Include="Scalar.AspNetCore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DMP.BL\DMP.BL.csproj" />
+    <ProjectReference Include="..\DMP.Crosscutting\DMP.Crosscutting.csproj" />
+    <ProjectReference Include="..\DMP.DataAccess\DMP.DataAccess.csproj" />
+  </ItemGroup>
+
+</Project>

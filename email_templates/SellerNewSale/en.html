@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 You made a sale on Filezon!</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f4f4f4;">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#f4f4f4">
+        <tr>
+            <td align="center" style="padding: 20px;">
+                <!-- Main Content Table -->
+                <table width="600" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="border-radius: 8px;">
+                    <tr>
+                        <td align="center" style="padding: 30px 0;">
+                            <img src="@(((dynamic)Model).LogoUrl)" alt="Logo" style="max-width: 150px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 20px; text-align: center; font-size: 18px; color: #333333;">                            
+                            <div style="margin: 0 0 20px; font-size: 16px; color: #666666; text-align: left;">
+                                <p><strong>Hi @(((dynamic)Model).UserName)</strong>,</p>
+                                <p>Great news — you've just made a sale on Filezon! 🎉</p>
+                                <p>The sale details:</p>
+                                <ul>
+                                    <li>Sale No.: #@(((dynamic)Model).SaleId)</li>
+                                    <li>Amount: @(((dynamic)Model).Amount)</li>
+                                </ul>
+                                <p>The payment has been successfully processed and is now available in your account balance. You can request a payout anytime from your dashboard.</p>
+                            </div>                            
+                            <a href="@(((dynamic)Model).ButtonLink)" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: #ffffff; text-decoration: none; border-radius: 5px; font-size: 16px;">View Sale Details</a>
+                            <div style="margin: 0 0 20px; font-size: 16px; color: #666666; text-align: left;">
+                                <br/>
+                                <p>Thank you for being part of Filezon and trusting us with your digital products. Here’s to many more sales!</p>
+                                <p>Best regards,<br/><strong>The Filezon Team</strong></p>
+                            </div>
+                        </td>
+                    </tr>                    
+                    <tr>
+                        <td style="padding: 10px 20px; text-align: center; font-size: 12px; color: #cccccc; background-color: #f9f9f9; border-top: 1px solid #e5e5e5;">
+                            © @(((dynamic)Model).Year) Filezon. All rights reserved.
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

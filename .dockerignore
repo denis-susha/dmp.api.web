@@ -1,0 +1,15 @@
+**/bin/
+**/obj/
+**/.vs/
+**/.vscode/
+**/.idea/
+**/*.user
+**/.env
+**/.env.*
+!**/.env.example
+.git/
+.gitignore
+.dockerignore
+Dockerfile
+README.md
+email_templates/
